@@ -9,10 +9,25 @@
 
 
 
-//reset button stuff
+
+
+
+
+
+
+
+
+
+
+  //reset button stuff
   const reset = document.getElementById(reset)
 
 reset.addEventListener('click'), ( => {
   slogans = []
   sloganList.textContent = '';
 })
+
+//test stuff
+export function createCountString(climate, architechture, area ) {
+    
+}
