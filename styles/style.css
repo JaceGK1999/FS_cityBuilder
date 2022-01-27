@@ -1,3 +1,42 @@
+/*{
+@keyframes pulse {
+	0%{
+		background-color: var(--color2);
+	}
+	100% {
+		background-color: var(--color3);
+	}
+};*/
+@keyframes pulse {
+	0%{
+		background-color: var(--color2);
+	}
+    50%{
+        background-color: rgb(184, 111, 72)
+    }
+	100% {
+		background-color: var(--color4);
+	}
+}
+
+body{
+
+    
+    animation-name: pulse;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: linear; 
+}
+
+/* html, 
+body {
+height: 100%;
+width: 100%;
+padding: 0;
+margin: 0;
+animation: pule 15s infinite alternate; 
+}; */
 
 body {
     /* feel free to update these css variables for a quick theme */
@@ -34,7 +73,7 @@ body {
     --footer-height: 25px;
     
     font-family: 'Titillium Web', sans-serif;
-    background-color: var(--color2);
+    /* background-color: var(--color2); */
 }
 
 main {
