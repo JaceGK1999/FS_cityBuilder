@@ -1,76 +1,48 @@
-/*{
 @keyframes pulse {
-	0%{
-		background-color: var(--color2);
-	}
-	100% {
-		background-color: var(--color3);
-	}
-};*/
-@keyframes pulse {
-	0%{
-		background-color: var(--color2);
-	}
-	100% {
-		background-color: var(--color3);
-	}
+    0% {
+        background-color: var(--color2);
+    }
+    100% {
+        background-color: var(--color3);
+    }
 }
 
-body{
-
-    
-    animation-name: pulse;
+body {
+    /* animation-name: pulse;
 	animation-duration: 10s;
 	animation-iteration-count: infinite;
-	animation-direction: alternate;
-	animation-timing-function: linear; 
-}
+	animation-direction: alternate; */
+    /* animation-timing-function: linear;  */
+    animation: pulse 10s infinite alternate;
 
-/* html, 
-body {
-height: 100%;
-width: 100%;
-padding: 0;
-margin: 0;
-animation: pule 15s infinite alternate; 
-}; */
+    --color1: hsla(176, 88%, 10%, 1);
+    --color2: #4a9b7f;
+    --color3: hsla(183, 18%, 55%, 1);
+    --color4: hsla(17, 32%, 29%, 1);
+    --color5: hsla(355, 54%, 44%, 1);
 
-body {
-    /* feel free to update these css variables for a quick theme */
-    
-    /* --color1: white;
-    --color2: white;
-    --color3: white;
-    --color4: white;
-    --color5: white; */
-    
-    /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
-        
-    /* --color1: hsla(349, 69%, 76%, 1);
-    --color2: hsla(207, 67%, 44%, 1);
-    --color3: hsla(200, 61%, 56%, 1);
-    --color4: hsla(187, 41%, 94%, 1);
-    --color5: hsla(170, 28%, 95%, 1); */
-
-    /* --color1: hsla(45, 86%, 83%, 1);
-    --color2: hsla(135, 65%, 98%, 1);
-    --color3: hsla(315, 37%, 86%, 1);
-    --color4: hsla(45, 73%, 98%, 1);
-    --color5: hsla(224, 40%, 79%, 1); */
-    
---color1: hsla(176, 88%, 10%, 1);
---color2: #4A9B7F;
---color3: hsla(183, 18%, 55%, 1);
---color4: hsla(17, 32%, 29%, 1);
---color5: hsla(355, 54%, 44%, 1);
-    
     --header-height: 80px;
-    --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
+    --shadow: 0px 10px 20px -12px rgba(0, 0, 0, 0.45);
     --gutter: 30px;
     --footer-height: 25px;
-    
+
     font-family: 'Titillium Web', sans-serif;
     /* background-color: var(--color2); */
+}
+#climate-img {
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+    border: 10px;
+    padding: 10px;
+}
+.select {
+    width: 200px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 main {
@@ -82,7 +54,7 @@ main {
 }
 
 section {
-    background-color: white;
+    /* background-color: white; */
     max-width: 80%;
     display: flex;
     flex-direction: column;
@@ -98,11 +70,10 @@ section {
 header {
     display: flex;
     justify-content: flex-end;
-    background-color: white;
+    /* background-color: white; */
     height: var(--header-height);
     box-shadow: var(--shadow);
 }
-
 
 h2 {
     font-size: 1.8rem;
@@ -120,7 +91,7 @@ header img {
 p {
     margin: var(--gutter);
 }
-  
+
 footer {
     position: fixed;
     width: 100%;
@@ -128,10 +99,10 @@ footer {
     height: var(--footer-height);
     display: flex;
     justify-content: flex-end;
-    background-color: white;
+    /* background-color: white; */
     box-shadow: var(--shadow);
 }
 
-h2 {
-    color: white
+h1 {
+    color: var(--color5);
 }

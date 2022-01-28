@@ -1,4 +1,25 @@
-// import functions and grab DOM elements
+
+
+const climateSelect = document.getElementById('climate-select');
+const climateImage = document.getElementById('climate-img');
+
+
+
+
+
+
+
+
+climateSelect.addEventListener('change', (e) => {
+    const value = e.target.value;
+    const image = `./assets/climate-${value}.jpg`;
+    climateImage.src = image;
+    //climateCounter++;
+});
+  
+
+
+
 
 // let state
 
