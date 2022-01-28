@@ -54,7 +54,7 @@ function displayCatchPhrases() {
     }
 }
 
-catchBtn.addEventListener('enter', () => {
+catchBtn.addEventListener('click', () => {
     catchPhrases.push(catchPhraseInput.value);
     displayCatchPhrases();
 });
