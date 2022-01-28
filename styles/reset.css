@@ -4,28 +4,6 @@ v2.0 | 20110126
 License: none (public domain)
 */
 
-
-/* @keyframes pulse {
-	0%{
-		background-color: var(--color2);
-	}
-	50% {
-		background-color: var(--color3);
-	}
-}
-
-
-
-html, 
-body {
-height: 100%;
-width: 100%;
-padding: 0;
-margin: 0;
-animation: pule 15s infinite alternate;
-} */
-
-
 *{
 box-sizing: border-box;
 }
