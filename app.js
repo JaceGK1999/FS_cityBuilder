@@ -7,8 +7,11 @@ const homeImage = document.getElementById('home-img');
 const areaSelect = document.getElementById('area-select');
 const areaImage = document.getElementById('area-img');
 const reportEl = document.getElementById('report');
+const catchPhraseList = document.getElementById('catch-list');
+const catchBtn = document.getElementById('catch-btn');
+const catchPhraseInput = document.getElementById('catch-phrase-input');
 
-// let slogans = [];
+let catchPhrases = [];
 let climateCounter = 0;
 let homeCounter = 0;
 let areaCounter = 0;
@@ -41,6 +44,20 @@ function displayStats() {
     const statsString = createStatsString(climateCounter, areaCounter, homeCounter);
     reportEl.textContent = statsString;
 }
+
+function displayCatchPhrases() {
+    catchPhraseList.textContent = '';
+    for (let catchPhrase of catchPhrases) {
+        const p = document.createElement('p');
+        p.textContent = catchPhrase;
+        catchPhraseList.append(p);
+    }
+}
+
+catchBtn.addEventListener('enter', () => {
+    catchPhrases.push(catchPhraseInput.value);
+    displayCatchPhrases();
+});
 
 // set event listeners
 // get user input
